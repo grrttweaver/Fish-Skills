@@ -1,5 +1,5 @@
 data "template_file" "nginx_app" {
-  template = file("./nginx.json")
+  template = file("./templates/nginx.json")
   vars = {
     app_name = var.nginx_app_name
     app_image = var.nginx_app_image
